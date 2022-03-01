@@ -1,0 +1,24 @@
+apply plugin: 'application'
+
+archivesBaseName = 'server'
+
+mainClassName = 'net.nocturne.Engine'
+
+dependencies {
+
+    compile group: 'com.google.guava', name: 'guava', version: '30.0-jre'
+    compile group: 'io.netty', name: 'netty', version: '3.10.6.Final'
+    compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+
+
+    implementation files('library/mysql-connector-5.1.22.jar')
+    implementation files('library/javacord-2.0.11-shaded.jar')
+    implementation files('library/json-lib-2.4')
+    implementation files('library/lzma-4.63-jio-0.94.jar')
+    implementation files('library/minifs_v1.jar')
+
+}
+
+sourceSets {
+    main.java.srcDirs = ['src']
+}

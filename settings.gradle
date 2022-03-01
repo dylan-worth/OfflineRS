@@ -1,0 +1,3 @@
+rootProject.name = 'OfflineRS'
+include 'Client'
+include 'Server'

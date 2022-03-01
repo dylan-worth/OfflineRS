@@ -1,0 +1,14 @@
+apply plugin: 'application'
+
+archivesBaseName = 'client'
+
+mainClassName = 'com.RS3Applet'
+
+dependencies {
+    implementation files('library/gamepack.jar')
+    implementation files('library/gson-2.6.2.jar')
+}
+
+sourceSets {
+    main.java.srcDirs = ['src']
+}
